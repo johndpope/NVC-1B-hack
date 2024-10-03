@@ -1,0 +1,20 @@
+model:
+  # Add your model-specific parameters here
+
+data:
+  train_path: /path/to/your/training/data
+
+training:
+  batch_size: 32
+  num_epochs_per_stage: 10
+  lr_motion: 1e-4
+  lr_reconstruction: 5e-5
+  lr_finetune: 5e-5
+  lr_multi_frame: 1e-5
+  lambda_m: 85
+  lambda_r: 85
+  lambda_t: 85
+  lambda_T: 85
+  alpha: 0.84  # For CombinedL1SSIMLoss
+  num_frames: 6  # For multi-frame fine-tuning
+  save_path: nvc1b_model.pth
