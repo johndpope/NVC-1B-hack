@@ -2,8 +2,11 @@ model:
   # Add your model-specific parameters here
 
 data:
-  train_path: /path/to/your/training/data
-
+  train_path: "/path/to/webvid10m/videos"
+  sample_size: 256
+  num_frames: 200
+  num_workers: 4
+  
 training:
   batch_size: 32
   num_epochs_per_stage: 10
